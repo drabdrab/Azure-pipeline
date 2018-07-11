@@ -14,7 +14,8 @@ pipeline {
   }
   environment {
     MY_NAME = 'Mary'
-    TEST_USER_USR = 'test-user'
+    TEST_USER_USR = 'Mary'
+    TEST_USER_PSW = 'test-user'
   }
   parameters {
     string(name: 'Name', defaultValue: 'whoever you are', description: 'Who should I say hi to?')
