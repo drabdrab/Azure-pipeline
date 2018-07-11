@@ -14,7 +14,7 @@ pipeline {
   }
   environment {
     MY_NAME = 'Mary'
-    TEST_USER_USR = 'Mary'
+    TEST_USER_USR = 'Jim'
     TEST_USER_PSW = 'test-user'
   }
   parameters {
