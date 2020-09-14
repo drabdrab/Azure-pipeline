@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'MEP-1014-Test-Machine-Yiming'
+  vmImage: 'ssa-asb-azagents'
 
 steps:
 - script: echo Hello, world!
