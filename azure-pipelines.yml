@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ssa-asb-azagents'
+  name: 'ssa-asb-azagents'
 
 steps:
 - script: echo Hello, world!
