@@ -10,7 +10,6 @@ pool:
   name: 'ssa-asb-azagents'
 
 steps:
-- script: sudo xcodebuild -license
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
