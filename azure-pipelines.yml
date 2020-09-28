@@ -21,6 +21,10 @@ steps:
 
 - script: |
     echo Installing $(caCertificate.secureFilePath) to the trusted CA directory...   
-    cd $(caCertificate.secureFilePath)
+    cd ~/Library/Keychain
+    ls
+    security create-keychain -p 'test' test.keychain
+    security unlock-keychain -p 'test' test.keychain
+    security import $(caCertificate.secureFilePath) -k test.keychain -P 'SYMCnorton9PT'
     ls
 
