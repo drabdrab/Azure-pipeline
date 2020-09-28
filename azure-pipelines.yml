@@ -26,6 +26,7 @@ steps:
     security create-keychain -p 'test' test.keychain
     security list-keychains -d user -s $(security list-keychains -d user | sed -e s/\"//g) test.keychain-db
     security unlock-keychain -p 'test' test.keychain
-    security import $(caCertificate.secureFilePath) -k test.keychain -P 'SYMCnorton9PT' -T /usr/bin/codesign
+    security import $(caCertificate.secureFilePath) -k test.keychain -P 'SYMCnorton9PT'
+    security import $(caCertificate.secureFilePath) -k test.keychain -A
     ls
 
