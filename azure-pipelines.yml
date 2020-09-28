@@ -14,7 +14,7 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- task: DownloadSecureFile@
+- task: DownloadSecureFile@1
   name: caCertificate
   inputs:
     secureFile: 'iPhoneDeveloper_NLOK_29June_2021.p12'
